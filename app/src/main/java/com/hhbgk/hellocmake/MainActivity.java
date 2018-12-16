@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.hhbgk.hellocmake.impl.Player;
+
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'hello_cmake' library on application startup.
@@ -19,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
+
+        Player player = new Player();
+        player.create(1, "hello");
+
+        Player player2 = new Player();
+        player2.create(2, "hello2");
     }
 
     /**
