@@ -5,6 +5,7 @@ add_library( hello_cmake
              SHARED
 
              hello.c
+        codec/player.c
         player-jni.c)
 
 find_library(log-lib

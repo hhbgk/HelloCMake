@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         tv.setText(stringFromJNI());
 
         Player player = new Player();
-        player.create(1, "hello");
+        player.create(3, "hello");
 
         Player player2 = new Player();
-        player2.create(2, "hello2");
+        player2.create(1, "hello2");
     }
 
     /**
